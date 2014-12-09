@@ -9,7 +9,7 @@ RUN apt-get update --fix-missing && apt-get upgrade -y
 RUN apt-get install -y make wget python python-pip build-essential openjdk-7-jre
 
 # install sphinx
-RUN pip install Sphinx sphinx-rtd-theme
+RUN pip install Sphinx sphinx-rtd-theme sphinxcontrib-httpdomain
 RUN wget http://garr.dl.sourceforge.net/project/plantuml/plantuml.jar -O /opt/plantuml.jar
 
 ENV PLANTUML_JAR /opt/plantuml.jar
