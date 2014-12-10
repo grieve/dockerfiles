@@ -11,4 +11,4 @@ RUN apt-get install -y python python-pip
 # install sphinx
 RUN pip install radon
 
-ENTRYPOINT radon
+CMD radon cc /app
